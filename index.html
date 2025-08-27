@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency Service</title>
     <link rel="icon" type="image/x-icon" href="./assets/logo-dark.png">
+    <link rel="stylesheet" href="responsive.css">
 <!-- Tailwind Css + Daisy UI -->
      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -12,12 +13,12 @@
 </head>
 <body>
 <!--Navbar-->
-    <header class="flex justify-between w-[90%] mx-auto">
+    <header class="flex flex-wrap justify-between items-center w-[90%] mx-auto gap-4">
         <div class="flex justify-center items-center p-3 ">
             <img class="w-[50px] h-[50px]" src="assets/logo.png" alt="Emergency Service">
             <h1 class="ml-3 text-[#006747] font-[800]">Emergency <br> Service</h1>
         </div>
-        <div class="flex justify-center items-center gap-4">
+        <div class="heart-coin flex justify-center items-center gap-4">
             <div class="flex justify-center items-center gap-2 bg-[#cafdd5e3] p-3 w-[100px] rounded-[50px]"><span>0</span><img class="w-[30px] h-[30px]" src="./assets/heart.png" alt="Heart"></div>
             <div class="flex justify-center items-center gap-2 bg-[#cafdd5e3] p-3 w-[100px] rounded-[50px]"><span>100</span><img class="w-[30px] h-[30px]" src="./assets/coin.png" alt="Coin"></div>
             <div class="flex justify-center items-center gap-2 bg-[#00A63E] text-[white] w-[100px] p-4 rounded-[50px] font-[600]"><p>2 Copy </p></div>
@@ -33,9 +34,10 @@
         </div>
         </section>
 <!-- Main Section -->
-        <section class="grid grid-cols-5 m-4 w-[90%] mx-auto ">
-            <div class=" grid grid-cols-3 gap-4 col-span-4  ">
-                <div class="w-[100%] H-[350px] shadow-lg rounded-xl p-5 mt-2">
+        <section class="grid grid-cols-1 md:grid-cols-5 m-4 w-[90%] mx-auto gap-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 col-span-4">
+
+                <div class="w-full min-h-[280px] md:h-[350px] shadow-lg rounded-xl p-5 mt-2">
                     <div class="flex justify-between"> <div class="bg-[#FFE3E2] rounded-xl w-[20%]"><img class="p-5" src="./assets/emergency.png" alt="ambulance"></div> <div><span><i class="fa-regular fa-heart"></i></span></div></div>
                     <h1 class="text-[20px] font-[600] mt-2">জাতীয় জরুরি সেবা</h1>
                     <p class="text-[#5C5C5C]">National Emergency</p>
@@ -47,7 +49,7 @@
                 </div>
                 </div>
 
-                <div class="w-[100%] H-[350px] shadow-lg rounded-xl p-5 mt-2">
+                <div class="w-full min-h-[280px] md:h-[350px] shadow-lg rounded-xl p-5 mt-2">
                 <div class="flex justify-between"> <div class="bg-[#FFE3E2] rounded-xl w-[20%]"><img class="p-5" src="./assets/police.png" alt="ambulance"></div> <div><span><i class="fa-regular fa-heart"></i></span></div></div>
                     <h1 class="text-[20px] font-[600] mt-2">পুলিশ</h1>
                     <p class="text-[#5C5C5C]">Police</p>
@@ -59,7 +61,7 @@
                 </div>
                 </div>
 
-                <div class="w-[100%] H-[350px] shadow-lg rounded-xl p-5 mt-2">
+                <div class="w-full min-h-[280px] md:h-[350px] shadow-lg rounded-xl p-5 mt-2">
                 <div class="flex justify-between"> <div class="bg-[#FFE3E2] rounded-xl w-[20%]"><img class="p-5" src="./assets/fire-service.png" alt="ambulance"></div> <div><span><i class="fa-regular fa-heart"></i></span></div></div>
                     <h1 class="text-[20px] font-[600] mt-2">ফায়ার সার্ভিস</h1>
                     <p class="text-[#5C5C5C]">Fire Service</p>
@@ -71,7 +73,7 @@
                 </div>
                 </div>
                 
-                <div class="w-[100%] H-[350px] shadow-lg rounded-xl p-5 mt-2">
+                <div class="w-full min-h-[280px] md:h-[350px] shadow-lg rounded-xl p-5 mt-2">
                 <div class="flex justify-between"> <div class="bg-[#FFE3E2] rounded-xl w-[20%]"><img class="p-5" src="./assets/ambulance.png" alt="ambulance"></div> <div><span><i class="fa-regular fa-heart"></i></span></div></div>
                     <h1 class="text-[20px] font-[600] mt-2">অ্যাম্বুলেন্স</h1>
                     <p class="text-[#5C5C5C]">Ambulance</p>
@@ -83,7 +85,7 @@
                 </div>
                 </div>
 
-                <div class="w-[100%] H-[350px] shadow-lg rounded-xl p-5 mt-2">
+                <div class="w-full min-h-[280px] md:h-[350px] shadow-lg rounded-xl p-5 mt-2">
                 <div class="flex justify-between"> <div class="bg-[#FFE3E2] rounded-xl w-[20%]"><img class="p-5" src="./assets/emergency.png" alt="ambulance"></div> <div><span><i class="fa-regular fa-heart"></i></span></div></div>
                     <h1 class="text-[20px] font-[600] mt-2">নারী ও শিশু সহায়তা</h1>
                     <p class="text-[#5C5C5C]">Women & Child Helpline</p>
@@ -95,7 +97,7 @@
                 </div>
                 </div>
 
-                <div class="w-[100%] H-[350px] shadow-lg rounded-xl p-5 mt-2">
+                <div class="w-full min-h-[280px] md:h-[350px] shadow-lg rounded-xl p-5 mt-2">
                <div class="flex justify-between"> <div class="bg-[#FFE3E2] rounded-xl w-[20%]"><img class="p-5" src="./assets/emergency.png" alt="ambulance"></div> <div><span><i class="fa-regular fa-heart"></i></span></div></div>
                     <h1 class="text-[20px] font-[600] mt-2">দুদক</h1>
                     <p class="text-[#5C5C5C]">Anti-Corruption</p>
@@ -107,7 +109,7 @@
                 </div>
                 </div>
 
-                <div class="w-[100%] H-[350px] shadow-lg rounded-xl p-5 mt-2">
+                <div class="w-full min-h-[280px] md:h-[350px] shadow-lg rounded-xl p-5 mt-2">
                 <div class="flex justify-between"> <div class="bg-[#FFE3E2] rounded-xl w-[20%]"><img class="p-5" src="./assets/emergency.png" alt="ambulance"></div> <div><span><i class="fa-regular fa-heart"></i></span></div></div>
                     <h1 class="text-[20px] font-[600] mt-2">বিদ্যুৎ বিভ্রাট</h1>
                     <p class="text-[#5C5C5C]">Electricity Outage</p>
@@ -119,7 +121,7 @@
                 </div>
                 </div>
 
-                <div class="w-[100%] H-[350px] shadow-lg rounded-xl p-5 mt-2">
+                <div class="w-full min-h-[280px] md:h-[350px] shadow-lg rounded-xl p-5 mt-2">
                 <div class="flex justify-between"> <div class="bg-[#FFE3E2] rounded-xl w-[20%]"><img class="p-5" src="./assets/emergency.png" alt="ambulance"></div> <div><span><i class="fa-regular fa-heart"></i></span></div></div>
                     <h1 class="text-[20px] font-[600] mt-2">ব্র্যাক</h1>
                     <p class="text-[#5C5C5C]">Brac</p>
@@ -131,7 +133,7 @@
                 </div>
                 </div>
 
-                <div class="w-[100%] H-[350px] shadow-lg rounded-xl p-5 mt-2">
+                <div class="w-full min-h-[280px] md:h-[350px] shadow-lg rounded-xl p-5 mt-2">
                 <div class="flex justify-between"> <div class="bg-[#FFE3E2] rounded-xl w-[20%]"><img class="p-5" src="./assets/emergency.png" alt="ambulance"></div> <div><span><i class="fa-regular fa-heart"></i></span></div></div>
                     <h1 class="text-[20px] font-[600] mt-2">বাংলাদেশ রেলওয়ে</h1>
                     <p class="text-[#5C5C5C]">Bangladesh Railway</p>
@@ -144,8 +146,8 @@
                 </div>
 
             </div>
-
-            <aside class="col-span-1 shadow-lg rounded-xl p-5 m-2">
+<!--Aside bar-->
+            <aside class="col-span-1 shadow-lg rounded-xl p-5 ">
                 <div class="flex justify-between items-center  ">
                     <h1><i class="fa-regular fa-clock p-1"></i> Call History</h1>
                     <button class="btn bg-[#00A63E] w-[30%] text-white rounded-2xl">Clear</button>
@@ -157,5 +159,6 @@
     <footer>
 
     </footer>
+
 </body>
 </html>
