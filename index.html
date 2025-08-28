@@ -148,13 +148,13 @@
             </div>
 <!--Aside bar-->
             <aside class="w-[100%] mx-auto col-span-1 shadow-lg rounded-xl p-5 ">
-                <div class="flex justify-between items-center  ">
-                    <h1 ><i class="fa-regular fa-clock p-1"></i> Call History</h1>
-                    <button class="btn bg-[#00A63E] w-[30%] text-white rounded-2xl">Clear</button>
+                <div id="call-history">
+                <div class="flex justify-between items-center">
+                <h2 class="text-lg font-bold">Call History</h2>
+                <button id="clear-history" class="btn btn-sm bg-red-500 text-white">Clear History</button>
                 </div>
-                <ul id="call-history-list">
-                <!-- Calls will appear here -->
-            </ul>
+                <ul id="call-history-list" class="mt-2"></ul>
+                </div>
             </aside>
         </section>
     </main>
