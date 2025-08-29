@@ -22,7 +22,7 @@ for ( const btn of call ){
     const serviceNumber = parseInt(card.querySelector(".service-number").innerText)
         
     if(coinCount >=20){
-        alert( serviceName + " ।। " + "হটলাইন নাম্বার" +" - "+ serviceNumber + " ।। " + "আপনার প্রতিটি কলের জন্য ২০ কয়েন কেটে নেয়া হবে ")
+        alert( serviceName + " ।। " + "Hotline" +" - "+ serviceNumber + " ।। " + "20 coin will be charge for each call ")
         coinCount = coinCount - 20
         document.getElementById('coin-count').innerText = coinCount
 
@@ -48,7 +48,7 @@ for ( const btn of call ){
 });
     }    
     else{
-         alert("আপনার কাছে পর্যাপ্ত কয়েন নেই!")
+         alert("You don't have enough coin")
     }    
 
 })}
@@ -75,11 +75,10 @@ document.addEventListener("click", (e) => {
     });
   }
 });
-//English Version
+//Bangla Version
 document.getElementById("langBtn").addEventListener("click", () => {
-  window.location.href = "english.html";  
+  window.location.href = "index.html";  
 })
-
 
 
 
