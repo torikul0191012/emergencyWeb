@@ -28,9 +28,7 @@ for ( const btn of call ){
 
 // Call History Section //
     const callHistory = document.getElementById('call-history');  
-    const clearBtn = document.getElementById('clear-history');
-//For Time
-    const timeNow = new Date().toLocaleTimeString();
+    const timeNow = new Date().toLocaleTimeString();                                    //For Time
 //Add History
     const historyItem = document.createElement("div");
             historyItem.className = "p-2 border-b flex justify-between items-center";  //for style
@@ -43,11 +41,32 @@ for ( const btn of call ){
             `;
 // Call history তে append /prepend 
             callHistory.prepend(historyItem);
+// Clear Button 
+            const clearBtn = document.getElementById('clear-history');
+            clearBtn.addEventListener("click", function () {
+            callHistory.innerHTML = "";  
+});
     }    
     else{
          alert("আপনার কাছে পর্যাপ্ত কয়েন নেই!")
     }    
 
 })}
+
+//copy number 
+document.addEventListener("click", (e) => {
+  if (e.target.closest(".copy-btn")) {
+    const card = e.target.closest(".card");
+    const number = card.querySelector(".service-number").textContent.trim();
+    navigator.clipboard.writeText(number).then(() => {
+      e.target.closest(".copy-btn").textContent = "Copied!";
+      setTimeout(() => {
+        e.target.closest(".copy-btn").innerHTML = '<i class="fa-regular fa-clone"></i> Copy';
+      }, 1500);
+    });
+  }
+});
+
+
 
 
